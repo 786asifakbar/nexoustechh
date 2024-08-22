@@ -1,0 +1,27 @@
+/* Adjust the size of the icons */
+.icon-container {
+    font-size: 4rem; /* Adjust this value as needed */
+  }
+  
+  /* Ensure that the slick slider containers handle the gap correctly */
+  .slick-slide {
+    padding: 0 10px; /* Add horizontal padding to create spacing between slides */
+  }
+  
+  .service-card {
+    margin: 0 10px; /* Adjust the gap between cards */
+  }
+  
+  /* Optional: adjust the gap for smaller screens */
+  @media (max-width: 1024px) {
+    .slick-slide {
+      padding: 0 5px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .service-card {
+      margin: 0 5px;
+    }
+  }
+  

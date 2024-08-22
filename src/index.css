@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your main CSS file (e.g., index.css) */
+/* @import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css"; */
+
+body.dark-mode {
+    background-color: blue;
+    color: white;
+  }
+  .Buttun {
+         background-color: blue;
+  }
+
+  /* General Reset */
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   
+   /* Basic Styles */
+   body {
+       font-family: Arial, sans-serif;
+       line-height: 1.6;
+   }
+   
+   header {
+       background: #333;
+       color: white;
+       padding: 1rem;
+       text-align: center;
+   }
+   
+   nav ul {
+       list-style: none;
+       padding: 0;
+   }
+   
+   nav ul li {
+       display: inline;
+       margin: 0 10px;
+   }
+   
+   nav ul li a {
+       color: black;
+       text-decoration: none;
+   }
+   
+   section {
+       padding: 2rem;
+       text-align: center;
+       
+   }
+   
+   footer {
+       background: #333;
+       color: #fff;
+       text-align: center;
+       padding: 1rem;
+   }
+   
+   /* Responsive Styles */
+   @media (max-width: 768px) {
+       nav ul {
+           text-align: center;
+           padding: 0;
+
+       }
+       @media (max-width: 768px){
+         img{
+                width: auto;  
+         }
+
+       }
+         
+   
+       nav ul li {
+           display: block;
+           margin: 10px 0;
+       }
+   
+       section {
+           padding: 1rem;
+       }
+   }
+   
+   @media (max-width: 480px) {
+       header h1 {
+           font-size: 1.5rem;
+
+       }
+
+       @media (max-width: 480px) {
+        img{
+             width: auto;
+        }
+       }
+       nav ul li a {
+           font-size: 0.9rem;
+       }
+   
+       section {
+           padding: 0.5rem;
+       }
+   
+       footer {
+           font-size: 0.8rem;
+       }
+   }
+   
