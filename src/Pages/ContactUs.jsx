@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Phone, Email, LocationOn } from '@mui/icons-material';
 import { Button, TextField } from '@mui/material';
 
@@ -13,7 +13,7 @@ const ContactUs = () => {
             <div className="md:w-1/2 mb-10 md:mb-0">
               <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
               <p className="text-gray-600 mb-4">
-                We're here to help. Feel free to reach out to us.
+                We are here to help. Feel free to reach out to us.
               </p>
               <div className="mb-4">
                 <div className="flex items-center mb-2">

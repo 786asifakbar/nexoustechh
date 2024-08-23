@@ -16,8 +16,8 @@ const Header = () => {
 
   return (
     <>
-      <header className={`${darkMode ? 'bg-blue-700 text-sate-200' : 'bg-slate-100  text-black'} shadow-2xl  shadow-gray-400`}>
-        <nav className="container mx-auto flex items-center justify-between p-5">
+      <header className={`${darkMode ? 'bg-blue-700 text-sate-200' : 'bg-slate-100 text-black'} shadow-2xl  shadow-gray-400`}>
+        <nav className="container mx-auto flex items-center justify-between">
           <div className="text-xl font-bold">
             <NavLink to="/"><span className='text-3xl'>N</span>EX<span className='text-3xl'>O</span>US<span className='text-3xl'>T</span>ECH</NavLink>
           </div>

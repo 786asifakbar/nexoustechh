@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 
 const Overview = () => {
   return (
-    <div className="bg-gray-100 min-h-screen p-8">
+    <>
+   <div className="bg-gray-100 min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
         {/* Page Title */}
         <Typography variant="h2" className="text-blue-600 font-bold mb-6 text-center">
@@ -109,6 +110,7 @@ const Overview = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

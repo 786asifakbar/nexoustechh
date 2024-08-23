@@ -24,7 +24,7 @@ const HeroSection = () => {
         />
 
         {/* Hero Section */}
-        <section className="relative h-screen flex flex-col md:flex-row items-center justify-center ml-16">
+        <section className="relative h-screen flex flex-col md:flex-row items-center md:text-lg justify-center sm:ml-0 md:ml-0 lg:ml-16 mt-44 sm:mt-20 md:mt-8 lg:mt-12 xl:mt-16">
           {/* Left Side Content */}
           <motion.div
             initial={{ opacity: 0, x: -100 }}
@@ -75,7 +75,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1.2 }}
             transition={{ duration: 2.0 }}
-            className="mt-8 md:mt-0 md:w-1/2 flex justify-center"
+            className="mt-2 md:mt-0 md:w-1/2 flex justify-center"
           >
             <div 
               className="relative rounded-lg overflow-hidden w-full h-full md:w-96 md:h-80 transform transition-transform duration-300 hover:scale-105">

@@ -11,6 +11,9 @@ import PaymentIcon from '@mui/icons-material/Payment';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom'; // For navigation
 
+
+
+
 const services = [
   {
     title: 'Web Development',
@@ -79,7 +82,6 @@ const ServicesPage = () => {
 
   return (
     <> 
-  
       <div className="bg-white py-20">
        <div className="container mx-auto px-6">
         <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">Services</h1>
@@ -90,13 +92,13 @@ const ServicesPage = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="service-card flex flex-col items-center text-center p-6 bg-white rounded-lg transition-transform duration-300 text-blue-500 border-y-2 border-x-2 shadow-md hover:shadow-2xl"
-              whileHover={{ scale: 1.05, backgroundColor: '#1e3a8a', color: '#ffffff'}}
+              className="service-card flex flex-col items-center text-center p-6 bg-white rounded-lg border-y-4 border-x-4 shadow-md"
+              whileHover={{ scale: 1.05, backgroundColor: 'blue', color: '#ffffff'}}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="icon-container text-6xl mb-4">
+              <div className="icon-container text-6xl mb-4 text-blue-500 hover:text-white">
                 {service.icon}
               </div>
               <h2 className="text-xl font-semibold mb-2">{service.title}</h2>

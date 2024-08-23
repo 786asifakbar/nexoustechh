@@ -38,17 +38,18 @@ const CloudSolutions = () => {
               {/* Icons representing Cloud Solutions technologies/services */}
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/cloud-migration-icon.png" alt="Cloud Migration" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.6kw2mL32XFerpOiKKIxE0wHaGB?w=233&h=189&c=7&r=0&o=5&pid=1.7" alt="Cloud Migration" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/infrastructure-management-icon.png" alt="Infrastructure Management" className="w-12" />
+                  <CardMedia component="img" image='https://th.bing.com/th?id=OIP.f2MaqMz48EbhuJWwfqH93QHaE_&w=304&h=205&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2'></CardMedia>
+                
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/cloud-security-icon.png" alt="Cloud Security" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.MDowa2JwCXvjFzARJzuzugHaHa?w=184&h=184&c=7&r=0&o=5&pid=1.7" alt="Cloud Security" className="w-12" />
                 </Card>
               </Grid>
             </Grid>

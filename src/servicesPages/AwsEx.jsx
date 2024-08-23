@@ -1,5 +1,5 @@
 import { Typography, Grid, Card, CardMedia } from '@mui/material';
-import { TrendingUp, CheckCircleOutline } from '@mui/icons-material';
+import { TrendingUp, CheckCircleOutline, Cloud } from '@mui/icons-material'; // Import the Cloud icon
 import { motion } from 'framer-motion';
 
 const AwsEx = () => {
@@ -22,6 +22,7 @@ const AwsEx = () => {
             </Typography>
 
             <Typography className="text-gray-700 my-4">
+              <Cloud className="inline-block mr-2" />
               We specialize in designing and implementing AWS architectures that enhance your operational efficiency, ensure high availability, and provide robust security measures. Our team is adept at utilizing AWS services to optimize performance and reduce costs.
             </Typography>
 
@@ -37,22 +38,22 @@ const AwsEx = () => {
               {/* Icons representing AWS technologies/services */}
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/ec2-icon.png" alt="EC2" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.dfEIFZvuNC7ljFy2QNurLAAAAA&w=254&h=162&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="EC2" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/s3-icon.png" alt="S3" className="w-12" />
+                  <CardMedia component="img" image="https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png" alt="S3" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/lambda-icon.png" alt="Lambda" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.gxfOd1VfjLIXsuOgXVk-VAHaEK&w=333&h=187&c=8&rs=1&qlt=30&r=0&o=6&pid=3.1&rm=2" alt="Lambda" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/rds-icon.png" alt="RDS" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.KqNnfYtaVshGXbuGUCTOQwHaEo&w=316&h=197&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="RDS" className="w-12" />
                 </Card>
               </Grid>
             </Grid>
