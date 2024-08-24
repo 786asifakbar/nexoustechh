@@ -1,4 +1,7 @@
+import React, { useEffect } from 'react';
 import Slider from "react-slick";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const testimonials = [
     {
@@ -90,32 +93,42 @@ const Testimonials = () => {
         ],
     };
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1200,
+            offset: 200,
+            easing: 'ease-in-out',
+            delay: 100,
+            once: true,
+        });
+    }, []);
+
     return (
         <> 
-        <div className="container mx-auto px-4 py-10">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 text-black text-center">
-          What Our Client Said 
-        </h1>
-        <p className="text-gray-600 mb-6 text-center">
-        Discover what our clients have to say. Real experiences, real satisfaction.
-        </p>
-            <Slider {...settings}>
-                {testimonials.map((testimonial) => (
-                    <div key={testimonial.id} className="px-3">
-                        <div className="bg-white p-6 rounded-lg shadow-lg border-y-2 border-x-2 shadow-gray-400">
-                            <div className="flex items-center mb-4">
-                                <img src={testimonial.image} alt={testimonial.name} className="w-16 h-16 rounded-full mr-4" />
-                                <div>
-                                    <h3 className="text-lg font-semibold">{testimonial.name}</h3>
+            <div className="container mx-auto px-4 py-10" data-aos="fade-up">
+                <h1 className="text-3xl md:text-4xl font-bold mb-4 text-black text-center">
+                    What Our Clients Said
+                </h1>
+                <p className="text-gray-600 mb-6 text-center">
+                    Discover what our clients have to say. Real experiences, real satisfaction.
+                </p>
+                <Slider {...settings}>
+                    {testimonials.map((testimonial) => (
+                        <div key={testimonial.id} className="px-3" data-aos="fade-up" data-aos-delay={testimonial.id * 100}>
+                            <div className="bg-white p-6 rounded-lg shadow-lg border-y-2 border-x-2 shadow-gray-400">
+                                <div className="flex items-center mb-4">
+                                    <img src={testimonial.image} alt={testimonial.name} className="w-16 h-16 rounded-full mr-4" />
+                                    <div>
+                                        <h3 className="text-lg font-semibold">{testimonial.name}</h3>
+                                    </div>
                                 </div>
+                                <p className="text-gray-800">{testimonial.description}</p>
                             </div>
-                            <p className="text-gray-800">{testimonial.description}</p>
                         </div>
-                    </div>
-                ))}
-            </Slider>
-        </div>
-    </>
+                    ))}
+                </Slider>
+            </div>
+        </>
     );
 };
 

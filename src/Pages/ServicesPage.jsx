@@ -1,4 +1,7 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import CodeIcon from '@mui/icons-material/Code';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
@@ -10,9 +13,6 @@ import LockIcon from '@mui/icons-material/Lock';
 import PaymentIcon from '@mui/icons-material/Payment';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom'; // For navigation
-
-
-
 
 const services = [
   {
@@ -80,46 +80,60 @@ const services = [
 const ServicesPage = () => {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      offset: 200,
+      easing: 'ease-in-up',
+      delay: 100,
+      once: true,
+    });
+  }, []);
+
   return (
     <> 
       <div className="bg-white py-20">
-       <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-12">Services</h1>
-        <p className="text-center text-gray-800 mb-12">
-          Elevate your business with our comprehensive suite of innovative and reliable software solutions.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              className="service-card flex flex-col items-center text-center p-6 bg-white rounded-lg border-y-4 border-x-4 shadow-md"
-              whileHover={{ scale: 1.05, backgroundColor: 'blue', color: '#ffffff'}}
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <div className="icon-container text-6xl mb-4 text-blue-500 hover:text-white">
-                {service.icon}
-              </div>
-              <h2 className="text-xl font-semibold mb-2">{service.title}</h2>
-              <p className="mb-4">
-                {service.description}
-              </p>
-              <Button
-                variant="contained"
-                color="primary"
-                className="mt-4 focus:outline-none"
-                style={{ backgroundColor: 'white', color: '#1e3a8a' }}
-                onClick={() => navigate(service.link)}
+        <div className="container mx-auto px-6">
+          <h1 className="text-4xl font-bold text-center text-gray-900 mb-12" data-aos="fade-down">
+            Services
+          </h1>
+          <p className="text-center text-gray-800 mb-12" data-aos="fade-down">
+            Elevate your business with our comprehensive suite of innovative and reliable software solutions.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                className="service-card flex flex-col items-center text-center p-6 bg-white rounded-lg border-y-4 border-x-4 shadow-md"
+                whileHover={{ scale: 1.05, backgroundColor: 'blue', color: '#ffffff'}}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 2, y: 0 }}
+                transition={{ duration: 2.5, delay: index * 0.1 }}
+                data-aos="fade-up"
+                data-aos-delay={index * 1200}
               >
-                Learn More
-              </Button>
-            </motion.div>
-          ))}
+                <div className="icon-container text-6xl mb-4 text-blue-500 hover:text-white">
+                  {service.icon}
+                </div>
+                <h2 className="text-xl font-semibold mb-2">{service.title}</h2>
+                <p className="mb-4">
+                  {service.description}
+                </p>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  className="mt-4 focus:outline-none"
+                  style={{ backgroundColor: 'white', color: '#1e3a8a' }}
+                  onClick={() => navigate(service.link)}
+                >
+                  Learn More
+                </Button>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-  </>
+    </>
   );
 };
 

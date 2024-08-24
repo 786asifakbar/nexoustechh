@@ -1,14 +1,27 @@
+import React, { useEffect } from 'react';
 import { Typography, Grid, Card, CardMedia } from '@mui/material';
-import { TrendingUp, CheckCircleOutline, Cloud } from '@mui/icons-material'; // Import the Cloud icon
+import { TrendingUp, CheckCircleOutline, Cloud } from '@mui/icons-material';
 import { motion } from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AwsEx = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: 'ease-in-out',
+      delay: 100,
+      once: true,
+    });
+  }, []);
+
   return (
     <div className="bg-blue-50 min-h-screen p-8">
       <Grid container spacing={4} alignItems="center">
         
-        {/* Right Side */}
-      <Grid item xs={12} md={6}>
+        {/* Left Side */}
+        <Grid item xs={12} md={6} data-aos="fade-right">
           <motion.div
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -26,7 +39,7 @@ const AwsEx = () => {
         </Grid>
                 
         {/* Right Side */}
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} data-aos="fade-left">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -53,7 +66,7 @@ const AwsEx = () => {
               With our AWS expertise, you can expect scalable solutions that grow with your business, cost-effective cloud computing resources, and a reliable infrastructure to support your critical applications.
             </Typography>
 
-            <Grid container spacing={2} className="my-4">
+            <Grid container spacing={2} className="my-4" data-aos="zoom-in">
               {/* Icons representing AWS technologies/services */}
               <Grid item xs={4}>
                 <Card elevation={0}>
@@ -77,7 +90,7 @@ const AwsEx = () => {
               </Grid>
             </Grid>
 
-            <Grid container spacing={1} className="mt-6">
+            <Grid container spacing={1} className="mt-6" data-aos="fade-up">
               <Grid item xs={6}>
                 <Typography className="flex items-center">
                   <CheckCircleOutline className="text-blue-600 mr-2" /> EC2 Instances

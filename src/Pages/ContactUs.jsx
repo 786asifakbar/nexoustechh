@@ -1,16 +1,28 @@
-
+import React, { useEffect } from 'react';
 import { Phone, Email, LocationOn } from '@mui/icons-material';
 import { Button, TextField } from '@mui/material';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ContactUs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      offset: 200,
+      easing: 'ease-in-out',
+      delay: 100,
+      once: true,
+    });
+  }, []);
+
   return (
     <> 
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center" data-aos="fade-up">
       <div className="container mx-auto px-4 py-16">
         <div className="bg-white rounded-lg p-8">
-          <h1 className="text-4xl font-bold text-center mb-8">Contact Us</h1>
+          <h1 className="text-4xl font-bold text-center mb-8" data-aos="fade-down">Contact Us</h1>
           <div className="flex flex-col md:flex-row md:items-start">
-            <div className="md:w-1/2 mb-10 md:mb-0">
+            <div className="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
               <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
               <p className="text-gray-600 mb-4">
                 We are here to help. Feel free to reach out to us.
@@ -42,7 +54,7 @@ const ContactUs = () => {
                 ></iframe>
               </div>
             </div>
-            <div className="md:w-1/2">
+            <div className="md:w-1/2" data-aos="fade-left">
               <form className="bg-white p-8 rounded-lg shadow-md">
                 <div className="mb-4">
                   <TextField

@@ -25,21 +25,44 @@ body.dark-mode {
    
    /* Basic Styles */
    body {
-       font-family:'Roboto';
-       line-height: 1.6;
-   }
+       /* font-family:'Roboto'; */
+       /* line-height: 1.6; */
+       font-family: "Noto Serif", serif;
+       font-optical-sizing: auto;
+       font-weight: weight;
+       font-style: normal;
+       font-variation-settings:
+       "wdth" 100;
+
+
+
+    }
    
    header {
        background: #333;
        color: white;
        padding: 1rem;
        text-align: center;
+       font-family: "Noto Serif", serif;
+       font-optical-sizing: auto;
+       font-weight: weight;
+       font-style: normal;
+       font-variation-settings:
+       "wdth" 100;
+
    }
    
    nav ul {
        list-style: none;
        padding: 0;
-   }
+       font-family: "Noto Serif", serif;
+       font-optical-sizing: auto;
+       font-weight: weight;
+       font-style: normal;
+       font-variation-settings:
+       "wdth" 100;
+
+    }
    
    nav ul li {
        display: inline;
@@ -113,3 +136,11 @@ body.dark-mode {
        }
    }
    
+   .threeCards{
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+   }
