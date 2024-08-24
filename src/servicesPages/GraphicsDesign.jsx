@@ -25,22 +25,22 @@ const GraphicsDesign = () => {
               {/* Icons representing tools */}
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/photoshop-icon.png" alt="Photoshop" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.1itKg-PJRR-wJs1XA1uzzAHaFj?w=220&h=180&c=7&r=0&o=5&pid=1.7" alt="Photoshop" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/illustrator-icon.png" alt="Illustrator" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.S88g4b0j0BQXj6CE_1vfCQHaHa?w=176&h=180&c=7&r=0&o=5&pid=1.7" alt="Illustrator" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/figma-icon.png" alt="Figma" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.SY-UoZd3UR4zQsCzjwnOsAHaHa?w=144&h=180&c=7&r=0&o=5&pid=1.7" alt="Figma" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/sketch-icon.png" alt="Sketch" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.-xUqe3ecbiaxV646Ax6s3gHaHa?w=217&h=218&c=7&r=0&o=5&pid=1.7" alt="Sketch" className="w-12" />
                 </Card>
               </Grid>
               {/* Add more icons as needed */}

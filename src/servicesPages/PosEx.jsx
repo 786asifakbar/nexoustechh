@@ -37,17 +37,17 @@ const PosEx = () => {
               {/* Icons representing POS technologies/services */}
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/pos-register-icon.png" alt="POS Register" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.4wlQS5UmStS_6-FxmmPLugHaEq?w=304&h=192&c=7&r=0&o=5&pid=1.7" alt="POS Register" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/inventory-icon.png" alt="Inventory Management" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.9O4Z-ySNHWDszMOxmffJlQHaHB?w=173&h=180&c=7&r=0&o=5&pid=1.7" alt="Inventory Management" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/analytics-icon.png" alt="Sales Analytics" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.hU3dE088rrmDLvKaEmNwiwHaGL?w=213&h=180&c=7&r=0&o=5&pid=1.7" alt="Sales Analytics" className="w-12" />
                 </Card>
               </Grid>
             </Grid>

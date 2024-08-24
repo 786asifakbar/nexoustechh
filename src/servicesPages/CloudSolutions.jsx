@@ -1,7 +1,7 @@
 import { Typography, Grid, Card, CardMedia } from '@mui/material';
 import { Cloud, CheckCircleOutline } from '@mui/icons-material';
 import { motion } from 'framer-motion';
-
+import AwsEx from "./AwsEx"
 const CloudSolutions = () => {
   return (
     <>
@@ -101,6 +101,7 @@ const CloudSolutions = () => {
           </motion.div>
         </Grid>
       </Grid>
+      <AwsEx/>
     </div>
     </>
   );

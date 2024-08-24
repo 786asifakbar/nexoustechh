@@ -18,7 +18,7 @@ const SeoEx = () => {
               Search Engine Optimization (SEO)
             </Typography>
             <Typography className="text-gray-700 my-4">
-              Our SEO experts at Logic Tech utilize the latest techniques to improve your website's visibility on search engines like Google. We focus on both on-page and off-page SEO strategies to enhance your rankings, drive organic traffic, and increase conversions.
+              Our SEO experts at Logic Tech utilize the latest techniques to improve your website is visibility on search engines like Google. We focus on both on-page and off-page SEO strategies to enhance your rankings, drive organic traffic, and increase conversions.
             </Typography>
 
             <Typography className="text-gray-700 my-4">
@@ -37,17 +37,17 @@ const SeoEx = () => {
               {/* Icons representing SEO technologies/services */}
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/seo-icon.png" alt="SEO Optimization" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.Zx_gLV0_bAixP2Tj4rUdFAHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="SEO Optimization" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/keyword-research-icon.png" alt="Keyword Research" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.KE7ptiArqRb_mAMSx1H4dgHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="Keyword Research" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/backlink-icon.png" alt="Backlink Building" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.ncOUIaKm4lRql9ZryXZPvgHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="Backlink Building" className="w-12" />
                 </Card>
               </Grid>
             </Grid>

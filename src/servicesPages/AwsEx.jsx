@@ -6,7 +6,26 @@ const AwsEx = () => {
   return (
     <div className="bg-blue-50 min-h-screen p-8">
       <Grid container spacing={4} alignItems="center">
-        {/* Left Side */}
+        
+        {/* Right Side */}
+      <Grid item xs={12} md={6}>
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Card elevation={0}>
+              <CardMedia
+                component="img"
+                image="..\src\assets\aws.png"
+                alt="AWS"
+                className="w-full"
+              />
+            </Card>
+          </motion.div>
+        </Grid>
+                
+        {/* Right Side */}
         <Grid item xs={12} md={6}>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
@@ -90,24 +109,6 @@ const AwsEx = () => {
                 </Typography>
               </Grid>
             </Grid>
-          </motion.div>
-        </Grid>
-
-        {/* Right Side */}
-        <Grid item xs={12} md={6}>
-          <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Card elevation={0}>
-              <CardMedia
-                component="img"
-                image="..\src\assets\aws.png"
-                alt="AWS"
-                className="w-full"
-              />
-            </Card>
           </motion.div>
         </Grid>
       </Grid>

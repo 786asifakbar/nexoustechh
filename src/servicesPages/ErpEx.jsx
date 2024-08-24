@@ -37,17 +37,17 @@ const ErpEx = () => {
               {/* Icons representing ERP technologies/services */}
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/finance-icon.png" alt="Finance" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.XmNyNKcscIzAKGYNPxHXXwHaHa&w=250&h=250&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="Finance" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/hr-icon.png" alt="HR" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th/id/OIP.zArF9Ts1D9taILeluJTP4wHaHa?w=194&h=194&c=7&r=0&o=5&pid=1.7" alt="HR" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/supply-chain-icon.png" alt="Supply Chain" className="w-12" />
+                  <CardMedia component="img" image="https://cdn-icons-png.flaticon.com/512/12141/12141380.png" alt="Supply Chain" className="w-12" />
                 </Card>
               </Grid>
             </Grid>

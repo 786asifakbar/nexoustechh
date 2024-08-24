@@ -47,22 +47,22 @@ const DigitalMarketing = () => {
               {/* Icons representing technologies/services */}
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/seo-icon.png" alt="SEO" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.HT_dM4CxmCGY_jMahzfNVwHaFL&w=298&h=209&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="SEO" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/ppc-icon.png" alt="PPC" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.TR0RcVIlq7kpmEFIE19XqQHaGM&w=273&h=228&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="PPC" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/social-media-icon.png" alt="Social Media Marketing" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP.IeUA9u-wtancSaVdM2hrUgHaFj&w=288&h=216&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="Social Media Marketing" className="w-12" />
                 </Card>
               </Grid>
               <Grid item xs={4}>
                 <Card elevation={0}>
-                  <CardMedia component="img" image="/path/to/content-marketing-icon.png" alt="Content Marketing" className="w-12" />
+                  <CardMedia component="img" image="https://th.bing.com/th?id=OIP._VCVud3WJdqdG0hKleLXeAHaHv&w=244&h=255&c=8&rs=1&qlt=90&r=0&o=6&pid=3.1&rm=2" alt="Content Marketing" className="w-12" />
                 </Card>
               </Grid>
               {/* Add more icons as needed */}
